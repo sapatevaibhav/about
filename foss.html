@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FOSS alternatives</title>
+    <link rel="shortcut icon" href="assets/images/settings.png" type="image/x-icon">
+
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            background-color: black;
+            box-shadow: 0px 0px 20px #6B0CFF;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #6B0CFF;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        th {
+            background-color: #6B0CFF;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #4B0082;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #800080;
+        }
+
+        /* .search-container {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        .search-container input[type="text"] {
+            flex-grow: 1;
+            border: none;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            margin-left: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-container button:hover {
+            background-color: #3e8e41;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button" type="button">Search</button>
+    </div>-->
+    <table id="table-body"> 
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Package</th>
+                <th>Description</th>
+                <th>For</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="https://newpipe.net">1. NewPipe <br></a>
+                    <a href="https://github.com/libre-tube/LibreTube">2. LibreTube</a>
+                </td>
+                <td><a href="https://f-droid.org/packages/org.schabi.newpipe/">org.schabi.newpipe</a><br>
+                    <a href="https://f-droid.org/en/packages/com.github.libretube/">com.github.libretube</a>
+                </td>
+                <td>Video streaming</td>
+                <td>Youtube</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://github.com/NeoApplications/Neo-Store">Neo Store</a> </td>
+                <td><a href="https://f-droid.org/packages/com.machiav3lli.fdroid/">com.machiav3lli.fdroid</a></td>
+                <td>Application store</td>
+                <td>F-Droid</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://k9mail.app">K-9 Mail</a></td>
+                <td><a href="https://f-droid.org/packages/com.fsck.k9/">com.fsck.k9 </a></td>
+                <td>E-Mail management</td>
+                <td>Gmail</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="https://www.simplemobiletools.com/filemanager">File Manager</a> </td>
+                <td><a
+                        href="https://f-droid.org/packages/com.simplemobiletools.filemanager.pro/">com.simplemobiletools.filemanager.pro</a>
+                </td>
+                <td>Access, Modify files</td>
+                <td>File Manager</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="https://github.com/Telegram-FOSS-Team/Telegram-FOSS"> Telegram FOSS</a></td>
+                <td><a href="https://f-droid.org/packages/org.telegram.messenger/">org.telegram.messenger</a></td>
+                <td>Telegram client</td>
+                <td>Telegram</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="https://sangwan5688.github.io">BlackHole</a> </td>
+                <td><a href="https://f-droid.org/en/packages/com.shadow.blackhole/">com.shadow.blackhole</a></td>
+                <td>Listen Music</td>
+                <td>Spotify, Resso, YouTube music</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="https://www.simplemobiletools.com/contacts">Contacts</a> </td>
+                <td><a
+                        href="https://f-droid.org/en/packages/com.simplemobiletools.contacts.pro/">com.simplemobiletools.contacts.pro</a>
+                </td>
+                <td>Add, Edit & Delete contacts</td>
+                <td>Phone & Contacts</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="https://github.com/SimpleMobileTools/Simple-SMS-Messenger">SMS Messenger</a></td>
+                <td><a
+                        href="https://f-droid.org/packages/com.simplemobiletools.smsmessenger/">com.simplemobiletools.smsmessenger</a>
+                </td>
+                <td>Send, Receive, Manage messages</td>
+                <td>Messeging</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="https://github.com/linuxmint/warpinator">Warpinator</a> </td>
+                <td><a href="https://f-droid.org/packages/slowscript.warpinator/">slowscript.warpinator</a></td>
+                <td>File sharing across devices</td>
+                <td>KDE connect</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="https://github.com/Breta01/docus">Docus</a></td>
+                <td><a href="https://apt.izzysoft.de/fdroid/index/apk/com.bretahajek.docus">com.bretahajek.docus</a>
+                </td>
+                <td>Scan photos to PDF</td>
+                <td>All Document Scanner</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><a href="https://github.com/SimpleMobileTools/Simple-Dialer">Dialer</a> </td>
+                <td><a
+                        href="https://f-droid.org/packages/com.simplemobiletools.dialer/">com.simplemobiletools.dialer</a>
+                </td>
+                <td>Manage coll logs and make calls</td>
+                <td>Google Dialer</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><a href="https://www.simplemobiletools.com/gallery">Gallery</a> </td>
+                <td><a
+                        href="https://f-droid.org/packages/com.simplemobiletools.gallery.pro/">com.simplemobiletools.gallery.pro</a>
+                </td>
+                <td>Access photos and manage them</td>
+                <td>Photos</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td><a href="com.simplemobiletools.gallery.pro">Camera</a> </td>
+                <td><a
+                        href="https://f-droid.org/packages/com.simplemobiletools.camera/">com.simplemobiletools.camera</a>
+                </td>
+                <td>Capture Photos and Videos</td>
+                <td>Xiaomi Camera</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td><a href="https://github.com/Yet-Zio/yetCalc">yetCalc</a> </td>
+                <td><a href="https://f-droid.org/packages/yetzio.yetcalc/">yetzio.yetcalc</a></td>
+                <td>Converter, Perform basic-advance Mathematical operations</td>
+                <td>Calculator</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td><a href="https://activitywatch.net/">ActivityWatch </a> </td>
+                <td><a
+                        href="https://apt.izzysoft.de/fdroid/index/apk/net.activitywatch.android">net.activitywatch.android</a>
+                </td>
+                <td>See time spent on every app</td>
+                <td>Digital wellbeing and Parental Control</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><a href="https://github.com/SimpleMobileTools/Simple-Keyboard">Keyboard</a> </td>
+                <td><a
+                        href="https://f-droid.org/packages/com.simplemobiletools.keyboard/">com.simplemobiletools.keyboard</a>
+                </td>
+                <td>Type text</td>
+                <td>Gboard, Google Indic Keyboard, Mint Keyboard</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td><a href="https://trackercontrol.org/">TrackerControl</a> </td>
+                <td><a
+                        href="https://f-droid.org/packages/net.kollnig.missioncontrol.fdroid/">net.kollnig.missioncontrol.fdroid</a>
+                </td>
+                <td>Block trackers from applications</td>
+                <td>---</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <script>
+        const searchButton = document.getElementById("search-button");
+        const tableContainer = document.querySelector(".table-container");
+        const tableBody = document.getElementById("table-body");
+        const data = [
+            { no: 1, name: "NewPipe", package: "org.schabi.newpipe", description: "Video streaming", for: "YouTube" },
+        ];
+
+        searchButton.addEventListener("click", performSearch);
+
+        function performSearch() {
+            const searchInput = document.getElementById("search-input").value.toLowerCase();
+
+            // Clear the current table body
+            tableBody.innerHTML = "";
+
+            // Filter the data based on the search input
+            const filteredData = data.filter(item => {
+                return item.no.toString().includes(searchInput) ||
+                    item.name.toLowerCase().includes(searchInput) ||
+                    item.package.toLocaleLowerCase().includes(searchInput) ||
+                    item.description.toLowerCase().includes(searchInput) ||
+                    item.for.toLowerCase().includes(searchInput);
+            });
+            // console.log(filteredData);
+            // Populate the table with the filtered data
+            if (filteredData.length > 0) {
+                tableContainer.style.display = "block";
+                filteredData.forEach(item => {
+                    const row = document.createElement("tr");
+                    const nameCell = document.createElement("td");
+                    const ageCell = document.createElement("td");
+                    const locationCell = document.createElement("td");
+                    nameCell.textContent = item.name;
+                    ageCell.textContent = item.age;
+                    locationCell.textContent = item.location;
+                    row.appendChild(nameCell);
+                    row.appendChild(ageCell);
+                    row.appendChild(locationCell);
+                    tableBody.appendChild(row);
+                });
+            } else {
+                tableContainer.style.display = "none";
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
